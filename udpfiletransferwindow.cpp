@@ -71,6 +71,10 @@ void UDPFileTransferWindow::on_connectPB_clicked()
     }
     else
         for(int i=0;i<4;i++){
+            if (!re.exactMatch(IPParts.at(i))){
+                    ui->dstIPLE->setStyleSheet("border:2px solid rgb(199, 0, 0);");
+                    return;
+        }
             int part = IPParts.at(i).toInt();
             if(part <0 || part >255){
                 ui->dstIPLE->setStyleSheet("border:2px solid rgb(199, 0, 0);");
@@ -90,7 +94,7 @@ void UDPFileTransferWindow::on_connectPB_clicked()
 
 void UDPFileTransferWindow::on_sendFilePB_clicked()
 {
-    QString filePath=QFileDialog::getOpenFileName(this,"Choose the file you want to send","C:/Users/masri/Downloads/Uni/Computer Networks I/Homewroks/uploaded_files");
+    QString filePath=QFileDialog::getOpenFileName(this,"Choose the file you want to send","C:/Users");
 
     if(filePath.isEmpty()){
         return;

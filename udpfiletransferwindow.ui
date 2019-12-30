@@ -53,7 +53,7 @@ font: 75 8pt &quot;Tahoma&quot;;
 </string>
     </property>
     <property name="text">
-     <string>172.19.77.153</string>
+     <string/>
     </property>
    </widget>
    <widget class="QLineEdit" name="dstPNLE">
