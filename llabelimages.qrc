@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/labels">
+        <file>signal2.png</file>
+        <file>add-file.png</file>
+        <file>file.png</file>
+        <file>signal.png</file>
+        <file>file32.png</file>
+        <file>file64.png</file>
+        <file>loading.gif</file>
+        <file>loading-min.gif</file>
+        <file>loading-min2.gif</file>
+    </qresource>
+</RCC>
